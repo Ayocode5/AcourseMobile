@@ -1,9 +1,9 @@
 import React from 'react';
-import HomeScreen from './HomeScreen';
-import MyClassScreen from './MyClassScreen';
-import CartScreen from './CartScreen';
-import NotificationScreen from './NotificationScreen';
-import ProfileScreen from './ProfileScreen';
+import HomeScreen from './Home/HomeScreen';
+import MyClassScreen from './MyClass/MyClassScreen';
+import CartScreen from './Cart/CartScreen';
+import NotificationScreen from './Notification/NotificationScreen';
+import ProfileScreen from './Profile/ProfileScreen';
 import colors from '../../assets/colors/colors';
 
 import {Image, View} from 'react-native';

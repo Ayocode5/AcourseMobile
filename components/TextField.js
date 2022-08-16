@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Box, VStack, Text, Input} from 'native-base';
 
 export default function TextField({
