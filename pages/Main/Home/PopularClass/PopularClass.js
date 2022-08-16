@@ -9,7 +9,7 @@ export default function PopularClass() {
 
   return (
     <View mt="29px">
-      <Flex flexDirection={'row'} justify={'space-between'}>
+      <Flex flexDirection={'row'} justify={'space-between'} mb={'11px'}>
         <Text color={colors.black} fontWeight={500} fontSize="16px">
           Popular Class
         </Text>
@@ -25,12 +25,23 @@ export default function PopularClass() {
       </Flex>
 
       <CardPopularClass
+        key={1}
         category="Design"
         nameClass="UX Design: Design Thinking"
         duration="1h 43m"
         lessons="10"
         price="25.00"
-        thumbClass={require('../../../../assets/images/course_1.png')}
+        thumbClass={require('../../../../assets/images/course_3.png')}
+      />
+
+      <CardPopularClass
+        key={2}
+        category="Design"
+        nameClass="UX Design: Design Thinking"
+        duration="1h 43m"
+        lessons="10"
+        price="25.00"
+        thumbClass={require('../../../../assets/images/course_2.png')}
       />
     </View>
   );

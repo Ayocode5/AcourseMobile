@@ -12,7 +12,7 @@ export default function CardPopularClass({
 }) {
   return (
     <Flex
-      mt={'11px'}
+      mb={'14px'}
       flexDirection={'row'}
       backgroundColor={colors.white}
       overflow="hidden"
