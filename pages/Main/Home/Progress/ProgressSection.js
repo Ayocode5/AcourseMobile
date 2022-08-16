@@ -24,7 +24,7 @@ export default function ProgressSection() {
         </Pressable>
       </Flex>
 
-      <ScrollView horizontal={true} maxW="600" paddingBottom="16px" mt="11px">
+      <ScrollView horizontal={true} maxW="600" paddingBottom="8px" mt="11px">
         <CardProgress
           key={1}
           nameClass="Graphic Design for Intermediate"
