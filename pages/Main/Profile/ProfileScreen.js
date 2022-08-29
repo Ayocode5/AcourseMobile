@@ -1,10 +1,17 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {NativeBaseProvider, ScrollView} from 'native-base';
+import HeaderProfile from './Header/HeaderProfile';
+import AccountInfo from './AccountInfo/AccountInfo';
+import MyClasses from './MyClasses/MyClasses';
 
 export default function ProfileScreen() {
   return (
-    <View>
-      <Text>Profile</Text>
-    </View>
+    <NativeBaseProvider>
+      <ScrollView width={'100%'} px={'32px'} mt="24px">
+        <HeaderProfile />
+        <AccountInfo />
+        <MyClasses />
+      </ScrollView>
+    </NativeBaseProvider>
   );
 }
