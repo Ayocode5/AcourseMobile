@@ -1,10 +1,15 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {NativeBaseProvider, ScrollView} from 'native-base';
+import HeaderMyClass from './Header/HeaderMyClass';
+import ContinueClass from './ContinueClass/ContinueClass';
 
 export default function MyClassScreen() {
   return (
-    <View>
-      <Text>My Class</Text>
-    </View>
+    <NativeBaseProvider>
+      <ScrollView width={'100%'} px={'32px'} mt="24px">
+        <HeaderMyClass />
+        <ContinueClass />
+      </ScrollView>
+    </NativeBaseProvider>
   );
 }
