@@ -1,6 +1,8 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, Image, LogBox, Flex, Box} from 'native-base';
+import {View, Text, Image, Flex, Box, Spacer} from 'native-base';
 import colors from '../../../../assets/colors/colors';
+import {Pressable} from 'react-native';
 
 export default function CardPopularClass({
   category,
@@ -26,7 +28,12 @@ export default function CardPopularClass({
         <Text fontSize="10px" fontWeight={500} color={colors.blue}>
           {category}
         </Text>
-        <Text fontSize="14px" fontWeight={500} color={colors.black}>
+        <Text
+          fontSize="14px"
+          fontWeight={500}
+          color={colors.black}
+          numberOfLines={2}
+          maxWidth="180px">
           {nameClass}
         </Text>
         <Flex
@@ -42,12 +49,13 @@ export default function CardPopularClass({
             backgroundColor={colors.lightGrey}
             borderRadius={24}
             mx={'8px'}
-            mt={'10px'}
           />
           <Text fontSize="10px" fontWeight={400} color={colors.lightGrey}>
             {lessons} Lessons
           </Text>
         </Flex>
+
+        <Spacer />
 
         <Flex
           mt="17.5px"
@@ -72,12 +80,14 @@ export default function CardPopularClass({
             </Text>
           </Flex>
 
-          <Image
-            alt="bookmark"
-            width={'14px'}
-            height={'18px'}
-            source={require('../../../../assets/icons/ic_bookmark.png')}
-          />
+          <Pressable onPress={() => console.log('pressed')}>
+            <Image
+              alt="bookmark"
+              width={'14px'}
+              height={'18px'}
+              source={require('../../../../assets/icons/ic_bookmark.png')}
+            />
+          </Pressable>
         </Flex>
       </Box>
     </Flex>

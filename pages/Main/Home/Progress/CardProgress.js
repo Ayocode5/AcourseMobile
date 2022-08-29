@@ -17,7 +17,12 @@ export default function CardProgress({currentProgress, thumbClass, nameClass}) {
         source={thumbClass}
       />
       <Box mt={'12px'} mb={'24px'} mx={'24px'}>
-        <Text color={colors.black} fontWeight={500} fontSize="14px">
+        <Text
+          color={colors.black}
+          fontWeight={500}
+          fontSize="14px"
+          height="50px"
+          numberOfLines={2}>
           {nameClass}
         </Text>
 
@@ -26,7 +31,14 @@ export default function CardProgress({currentProgress, thumbClass, nameClass}) {
           justify={'space-between'}
           mt={'8px'}
           alignItems={'center'}>
-          <Progress w={'80%'} bg={colors.lightBlue} value={currentProgress} />
+          <Progress
+            w={'80%'}
+            bg={colors.lightBlue}
+            value={currentProgress}
+            _filledTrack={{
+              bg: '#4279EE',
+            }}
+          />
           <Text
             color={colors.black}
             fontWeight={500}

@@ -13,18 +13,19 @@ export default function ProgressSection() {
         <Text color={colors.black} fontWeight={500} fontSize="16px">
           Your Progress
         </Text>
-        <Pressable onPress={() => navigation.push('Progress')}>
-          <Text
-            onPress={() => navigation.navigate('Profile')}
-            color={colors.blue}
-            fontWeight={500}
-            fontSize="12px">
+        <Pressable onPress={() => navigation.push('ProfileScreen')}>
+          <Text color={colors.blue} fontWeight={500} fontSize="12px">
             See All
           </Text>
         </Pressable>
       </Flex>
 
-      <ScrollView horizontal={true} maxW="600" paddingBottom="8px" mt="11px">
+      <ScrollView
+        horizontal={true}
+        maxW="600"
+        paddingBottom="8px"
+        mt="11px"
+        showsHorizontalScrollIndicator={false}>
         <CardProgress
           key={1}
           nameClass="Graphic Design for Intermediate"

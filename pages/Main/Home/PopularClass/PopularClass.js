@@ -13,12 +13,8 @@ export default function PopularClass() {
         <Text color={colors.black} fontWeight={500} fontSize="16px">
           Popular Class
         </Text>
-        <Pressable onPress={() => navigation.push('Progress')}>
-          <Text
-            onPress={() => navigation.navigate('Profile')}
-            color={colors.blue}
-            fontWeight={500}
-            fontSize="12px">
+        <Pressable onPress={() => navigation.push('ProfileScreen')}>
+          <Text color={colors.blue} fontWeight={500} fontSize="12px">
             See All
           </Text>
         </Pressable>
@@ -36,8 +32,8 @@ export default function PopularClass() {
 
       <CardPopularClass
         key={2}
-        category="Design"
-        nameClass="UX Design: Design Thinking"
+        category="Development"
+        nameClass="Swift Introduction for iOS App Development"
         duration="1h 43m"
         lessons="10"
         price="25.00"
