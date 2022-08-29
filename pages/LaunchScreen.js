@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {NativeBaseProvider, Text, Box} from 'native-base';
 import LoginScreen from './Auth/LoginScreen';
+import MainScreen from './Main/MainScreen';
 
 export default class LaunchScreen extends Component {
   constructor(props) {
@@ -20,7 +21,8 @@ export default class LaunchScreen extends Component {
 
   componentDidMount() {
     this.timeoutHandle = setTimeout(() => {
-      this.setState({component: <LoginScreen />});
+      // this.setState({component: <LoginScreen />});
+      this.setState({component: <MainScreen />});
     }, 3000);
   }
 
