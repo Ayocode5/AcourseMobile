@@ -4,7 +4,7 @@ import colors from '../../../../assets/colors/colors';
 
 export default function HeaderSection() {
   return (
-    <View>
+    <View marginTop={'36px'}>
       <Flex
         flexDirection={'row'}
         justifyContent={'space-between'}

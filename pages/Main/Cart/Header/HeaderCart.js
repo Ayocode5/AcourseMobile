@@ -4,7 +4,7 @@ import colors from '../../../../assets/colors/colors';
 
 export default function HeaderCart() {
   return (
-    <View>
+    <View marginTop={'24px'}>
       <HStack alignItems={'center'} justifyContent={'space-between'}>
         <View />
         <Text

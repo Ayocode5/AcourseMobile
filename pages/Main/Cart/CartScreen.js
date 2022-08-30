@@ -8,7 +8,7 @@ import {SafeAreaView} from 'react-native';
 export default function CartScreen() {
   return (
     <NativeBaseProvider>
-      <ScrollView width={'100%'} px={'32px'} mt="24px">
+      <ScrollView width={'100%'} px={'32px'}>
         <SafeAreaView>
           <HeaderCart />
           <CartItems />

@@ -8,7 +8,7 @@ export default function MyClassScreen() {
   return (
     <NativeBaseProvider>
       <SafeAreaView>
-        <ScrollView width={'100%'} px={'32px'} mt="24px">
+        <ScrollView width={'100%'} px={'32px'}>
           <HeaderMyClass />
           <ContinueClass />
         </ScrollView>

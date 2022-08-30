@@ -6,7 +6,7 @@ import colors from '../../../../assets/colors/colors';
 
 export default function HeaderMyClass() {
   return (
-    <View>
+    <View marginTop={'24px'}>
       <Text
         fontSize="18px"
         fontWeight={500}

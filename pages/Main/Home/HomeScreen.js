@@ -9,7 +9,7 @@ export default function HomeScreen() {
   return (
     <NativeBaseProvider>
       <SafeAreaView>
-        <ScrollView width={'100%'} px={'32px'} mt="44px">
+        <ScrollView width={'100%'} px={'32px'}>
           <HeaderSection />
           <ProgressSection />
           <PopularClass />
