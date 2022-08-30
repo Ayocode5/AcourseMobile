@@ -9,7 +9,7 @@ export default function ProfileScreen() {
   return (
     <NativeBaseProvider>
       <SafeAreaView>
-        <ScrollView width={'100%'} px={'32px'} mt="24px">
+        <ScrollView width={'100%'} height={'100%'} px={'32px'} mt="24px">
           <HeaderProfile />
           <AccountInfo />
           <MyClasses />
